@@ -31,14 +31,14 @@
         <div class="row py-2 px-lg-5">
             <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center text-white">
-                    <small><i class="fa fa-phone-alt mr-2"></i>+966 053 543 6620</small>
+                    <small><i class="fa fa-phone-alt mr-2"></i><a href=“tel:+9660535436620”>+966 053 543 6620</a></small>
                     <small class="px-3">|</small>
-                    <small><i class="fa fa-envelope mr-2"></i>rahaflogistics@gmail.com</small>
+                    <small><i class="fa fa-envelope mr-2"></i><a href="mailto:rahaflogistics@gmail.com">rahaflogistics@gmail.com</a></small>
                 </div>
             </div>
             <div class="col-lg-6 text-center text-lg-right">
                 <div class="d-inline-flex align-items-center">
-                    <a class="text-white px-2" href="">
+                    <a class="text-white px-2" target="_blank" href="https://www.facebook.com/profile.php?id=61551721275029">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                     <a class="text-white px-2" href="">
@@ -166,13 +166,13 @@
                         <div class="bg-primary py-5 px-4 px-sm-5">
                             <form class="py-5">
                                 <div class="form-group" dir="rtl" autocomplete="off">
-                                    <input type="text" class="form-control border-0 p-4" placeholder="الإسم" required="required" />
+                                    <input type="text" class="form-control border-0 p-4" placeholder="الإسم" required="required" id="name" />
                                 </div>
                                 <div class="form-group" dir="rtl">
-                                    <input type="email" class="form-control border-0 p-4" placeholder="الإيميل" required="required" />
+                                    <input type="email" class="form-control border-0 p-4" placeholder="الإيميل" required="required" id="email" />
                                 </div>
                                 <div class="form-group" dir="rtl">
-                                    <select class="custom-select border-0 px-4" style="height: 47px;">
+                                    <select class="custom-select border-0 px-4" style="height: 47px;" id="service">
                                         <option selected>نوع الشحنة</option>
                                         <option value="أجهزة كهربائية">أجهزة كهربائية</option>
                                         <option value="هاتف">هاتف</option>
@@ -555,12 +555,12 @@
                         <div class="col-md-6 mb-5">
                             <h3 class="text-primary mb-4">تواصل معنا</h3>
                             <p><i class="fa fa-map-marker-alt mr-2"></i> الرياض المنفوحه الجديده شارع سهل ابن عدي</p>
-                            <p><i class="fa fa-phone-alt mr-2"></i>+966 053 543 6620</p>
-                            <p><i class="fa fa-envelope mr-2"></i>rahaflogistics@gmail.com
+                            <p><i class="fa fa-phone-alt mr-2"></i><a href=“tel:+9660535436620”>+966 053 543 6620</a></p>
+                            <p><i class="fa fa-envelope mr-2"></i><a href="mailto:rahaflogistics@gmail.com">rahaflogistics@gmail.com</a>
                             </p>
                             <div class="d-flex justify-content-start mt-4">
-                                <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-whatsapp"></i></a>
-                                <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-social mr-2" href="https://wa.me/0535436620"><i class="fab fa-whatsapp"></i></a>
+                                <a class="btn btn-outline-light btn-social mr-2" href="https://www.facebook.com/profile.php?id=61551721275029"><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
                                 <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
                             </div>
@@ -608,25 +608,24 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
+    
+    
     <script src="js/main.js"></script>
-
+    <script src="mail/contact.js"></script>
+    <script src="mail/jqBootstrapValidation.min.js"></script>
     <script>
         function gotowhatsapp() {
 
             var name = document.getElementById("name").value;
-            var phone = document.getElementById("phone").value;
+            
             var email = document.getElementById("email").value;
             var service = document.getElementById("service").value;
-
-            var url = "https://wa.me/918789529215?text="
+            
+            var url = "https://wa.me/0535436620?text="
                 + "Name: " + name + "%0a"
-                + "Phone: " + phone + "%0a"
                 + "Email: " + email + "%0a"
                 + "Service: " + service;
 
